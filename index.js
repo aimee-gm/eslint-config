@@ -25,6 +25,9 @@ module.exports = {
       node: {
         extensions: [".js", ".ts", ".tsx"]
       }
+    },
+    react: {
+      version: "detect"
     }
   }
 };
