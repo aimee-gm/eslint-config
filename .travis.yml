@@ -1,0 +1,29 @@
+language: node_js
+os: linux
+node_js: "lts/*"
+
+cache:
+  directories:
+    - ~/.npm
+
+stages:
+  - name: deploy
+    if: tag =~ ^v
+
+jobs:
+  include:
+    - name: "npm"
+      stage: deploy
+      script:
+        - yarn build
+      deploy:
+        provider: npm
+        cleanup: false
+        email: $NPM_EMAIL
+        api_token: $NPM_APIKEY
+        edge: true
+        on:
+          tags: true
+
+notifications:
+  email: false

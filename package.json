@@ -1,0 +1,25 @@
+{
+  "name": "@aimee.gm/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint configuration",
+  "main": "index.js",
+  "repository": "https://github.com/aimee-gm/eslint-config.git",
+  "author": "Aimee Gamble-Milner",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.7.0",
+    "typescript": "^3.7.0"
+  }
+}
