@@ -1,6 +1,6 @@
 {
   "name": "@aimee.gm/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration",
   "main": "index.js",
   "repository": "https://github.com/aimee-gm/eslint-config.git",
